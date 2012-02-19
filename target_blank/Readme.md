@@ -19,13 +19,13 @@ Mas entendemos que esse recurso pode ser extremamente necessário em alguns caso
 ## Como implementar
 
 ### jQuery
-	```javascript
+```javascript
 	jQuery('.adlayer_space a').click(function(e){
 		e.preventDefault();
 		window.open(	jQuery(this).attr('href'));
 		return false;
 	});
-	```
+```
 ### Prototype
 	$('.adlayer_space a').observe('click', function(event){
 		var element = event.element();
