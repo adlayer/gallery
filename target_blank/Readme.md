@@ -40,6 +40,7 @@ Mas entendemos que esse recurso pode ser extremamente necessário em alguns caso
 
 ### Native DOM
 `document.getElementByClassName` pode não funcionar em Browsers antigos.
+
 	var spaces = document.getElementsByClassName('adlayer_space');
 	for(var i = 0; i < spaces.length; i++){
    	var space = spaces[i];
