@@ -17,9 +17,16 @@ O suporte ao target continua funcionando em muitos navegadores e foi readicionad
 Mas entendemos que esse recurso pode ser extremamente necessário em alguns casos de uso e ao invés transforma-lo em uma configuração na interface e aumentar a complexidade optamos por ajudar você a implementar esse comportamento via javascript com poucas linhas de código. 
 
 ## Como implementar
-### JQuery
+
+### jQuery
 	$('.adlayer_space a').click(function(e){
 		e.preventDefault();
-		window.open(	$(this).href);
+		window.open(	$(this).attr('href'));
+		return false;
+	});
+
+### Dojo
+	dojo.query(".adlayer_space a").onclick(function(){
+		window.open(this.href);
 		return false;
 	});
