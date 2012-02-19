@@ -37,3 +37,19 @@ Mas entendemos que esse recurso pode ser extremamente necessário em alguns caso
 		window.open(this.href);
 		return false;
 	});
+
+### Native DOM
+	var spaces = document.getElementsByClassName('adlayer_space');
+	for(var i = 0; i < spaces.length; i++){
+   	var space = spaces[i];
+    	var spaceChilds = space.childNodes;
+  		for(var j = 0; j < spaceChilds.length; spaceChilds++){
+			var element = spaceChilds[i];
+			if(element.nodeName === 'A'){
+				element.onclick = function(){
+					window.open(element.href);
+					return false;
+				}
+			}
+		}
+	}
