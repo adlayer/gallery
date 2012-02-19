@@ -15,3 +15,6 @@ Não se sabe com concerteza qual o futuro dessa especificação mas muitos tem o
 O suporte ao target continua funcionando em muitos navegadores e foi readicionado na especificação do HTML 5, mas por causa de tantas controversas em torno dessa funcionalidade e por concordar que o target blank é um recurso intrusivo tanto na semantica, sintaxe e usabilidade de um site, decidimos por não inserir esse comportamento por padrão nos links gerados pelo nosso sdk.
 
 Mas entendemos que esse recurso pode ser extremamente necessário em alguns casos de uso e ao invés transforma-lo em uma configuração na interface e aumentar a complexidade optamos por ajudar você a implementar esse comportamento via javascript com poucas linhas de código. 
+
+## Como implementar
+em breve
