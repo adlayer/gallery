@@ -27,21 +27,25 @@ Mas entendemos que esse recurso pode ser extremamente necessário em alguns caso
 	});
 ```
 ### Prototype
+```javascript
 	$('.adlayer_space a').observe('click', function(event){
 		var element = event.element();
 		window.open(element.readAttribute('href'));
 		return false;
 	});
+```
 
 ### Dojo
+```javascript
 	dojo.query(".adlayer_space a").onclick(function(){
 		window.open(this.href);
 		return false;
 	});
+```
 
 ### Native DOM
 `document.getElementByClassName` pode não funcionar em Browsers antigos.
-
+```javascript
 	var spaces = document.getElementsByClassName('adlayer_space');
 	for(var i = 0; i < spaces.length; i++){
    	var space = spaces[i];
@@ -56,7 +60,7 @@ Mas entendemos que esse recurso pode ser extremamente necessário em alguns caso
 			}
 		}
 	}
-
+```
 
 # Bugs
 Se você encontrar qualquer bug em alguma sugestão ou conhece uma maneira melhor de fazer isso informe-nos no [tópico](https://github.com/adlayer/gallery/issues/1) da implementação.
