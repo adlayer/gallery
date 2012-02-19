@@ -55,3 +55,7 @@ Mas entendemos que esse recurso pode ser extremamente necessário em alguns caso
 			}
 		}
 	}
+
+
+# Bugs
+Se você encontrar qualquer bug em alguma sugestão ou conhece uma maneira melhor de fazer isso informe-nos no [tópico](issues/1) da implementação.
